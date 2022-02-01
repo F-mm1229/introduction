@@ -170,6 +170,14 @@ h1 {
     background-image: url(無題28_20210528221740.PNG);
 }
 
+@mixin fusen {
+    float: left;
+    background-color:#f7f9f9;
+    border-left: solid 25px #59656f;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
 .point1 {
     float: left;
     width: 200px;
@@ -177,10 +185,7 @@ h1 {
     padding: 0.5em 1em;
     margin-top: 160px;
     margin-left: 250px;
-    background-color:#f7f9f9;
-    border-left: solid 25px #59656f;
-    box-shadow: 0 3px 5px rgba(0,0,0,0.5);
-    text-align: center;
+    @include fusen;
 }
 
 .point2 {
